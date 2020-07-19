@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body{
+                background-image:url("");
+                margin:0;
+                padding: 0;
+                font-family: sans-serif;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .box{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 400px;
+                padding: 40px;
+                background: rgba(0, 0, 0, .6);
+                box-sizing: border-box;
+                box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+                border-radius: 5px;
+            }
+            .box h2{
+                margin:0;
+                padding: 0;
+                color:white;
+                text-align: center;
+            }
+            .box .inputBox{
+                position: relative;
+            }
+            .box .inputBox input{
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color:white;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+                border:none;
+                outline: none;
+                background: transparent;
+                border-bottom: 1px solid #ffffff;
+            }
+            .box .inputBox label{
+                position: absolute;
+                top:0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color:white;
+                pointer-events: none;
+                transition: .5s;
+            }
+            .box .inputBox input:focus ~ label,
+            .box .inputBox input:valid ~ label
+            {
+                top: -18px;
+                left:0;
+                color:grey;
+                font-size: 12px;
+            }
+            .box button{
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                background: #03a9f4;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+
+            }
+            .signupbottom{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,300%);
+            }
+            .main{
+                margin:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <a href="Home.html">Home</a>
+        </div>
+        <div class="box">
+            <h2>Login</h2>
+            <form>
+                <div class="inputBox">
+                    <input type="email" name="" required="">
+                    <label>eMail</label></div>
+                <div class="inputBox">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="signupbottom">
+            <p>Haven't you Signed up? Click on <a href="SignUp.html">Sign Up</a></p>
+        </div>
+    </body>
+</html>
